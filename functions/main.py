@@ -10,7 +10,7 @@ from perception.hashers import PHash
 # Initialize Firebase Admin SDK
 firebase_admin.initialize_app()
 
-GENAI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBldI6DpbXw465rQk9ULt7SWAdkO47RDY8")
+GENAI_API_KEY = os.getenv("GEMINI_API_KEY", "your api key")
 genai.configure(api_key=GENAI_API_KEY)
 
 @storage_fn.on_object_finalized()
